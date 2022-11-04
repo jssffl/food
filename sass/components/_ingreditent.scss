@@ -1,0 +1,90 @@
+.food-preservation {
+  &__wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+  }
+}
+
+.article {
+  width: 42rem;
+  padding: 2rem 4rem;
+  background-color: #fff;
+  margin: 2rem 4rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: $shadow-light;
+  border-radius: 5px;
+
+  position: relative;
+
+  @media only screen and (max-width: $bp-small) {
+    width: 35rem;
+    padding: 2rem 2.5rem;
+  }
+
+  &__title {
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: 0.15rem;
+    margin-bottom: 1.2rem;
+
+    @media only screen and (max-width: $bp-small) {
+      font-size: 1.6rem;
+    }
+  }
+
+  &__description {
+    margin-bottom: auto;
+    line-height: 1.8;
+    font-size: 1.3rem;
+    letter-spacing: 0.12rem;
+    padding-bottom: 2rem;
+    display: none;
+    transition: all 0.2s ease;
+  }
+
+  &__show-more {
+    display: none;
+  }
+
+  &__show-more-icon {
+    width: 2.5rem;
+    height: 2.5rem;
+    position: absolute;
+    top: 2.4rem;
+    right: 2rem;
+    cursor: pointer;
+    fill: $color-primary;
+    transition: all 0.2s;
+
+    &:hover {
+      transform: scale(1.1);
+    }
+    &:active {
+      transform: translateY(2px);
+    }
+
+    @media only screen and (max-width: $bp-small) {
+      top: 2rem;
+    }
+  }
+
+  &__show-more:checked ~ &__description {
+    display: block;
+  }
+
+  &__author {
+    display: flex;
+  }
+
+  &__author-icon {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  &__author-box {
+    margin-left: 2rem;
+  }
+}

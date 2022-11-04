@@ -1,0 +1,302 @@
+// RECEIPT
+.receipt {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+  &__item {
+    width: 32rem;
+    height: 28rem;
+    margin: 0 4.5rem 4rem;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    position: relative;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0 2.5rem 4rem;
+    }
+
+    &--front,
+    &--back {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+
+      -webkit-backface-visibility: hidden;
+      backface-visibility: hidden;
+      background-color: #fff;
+      box-shadow: $shadow-dark;
+      border-radius: 5px;
+      overflow: hidden;
+      transition: all 0.8s ease;
+    }
+
+    &--back {
+      transform: rotateY(180deg);
+      padding: 1.5rem 2rem;
+      line-height: 1.5;
+    }
+
+    &:hover &--front {
+      transform: rotateY(-180deg);
+    }
+
+    &:hover &--back {
+      transform: rotateY(0);
+    }
+  }
+
+  //FRONT-SIDE
+
+  &__img {
+    width: 100%;
+    display: block;
+    overflow: hidden;
+  }
+
+  &__name--front {
+    font-size: 1.8rem;
+    color: #fff;
+    font-weight: 400;
+    letter-spacing: 0.5rem;
+    background-image: linear-gradient(
+      to right bottom,
+      rgba(#000, 0.2),
+      rgba(#000, 0.4)
+    );
+    padding: 0.6rem 1.5rem;
+    width: 100%;
+    position: absolute;
+    bottom: 24%;
+    left: 0;
+  }
+
+  &__details {
+    display: flex;
+    align-items: center;
+    height: 25%;
+    font-size: 1.3rem;
+    font-weight: 400;
+    padding: 0 0.8rem;
+
+    & > * {
+      background-color: $color-grey-light-2;
+      border-radius: 100px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 3.5rem;
+      padding: 0 1rem;
+    }
+  }
+
+  &__like {
+    margin-right: 0.5rem;
+  }
+
+  &__author {
+    margin-right: auto;
+
+    span {
+      letter-spacing: 0.15rem;
+    }
+  }
+
+  &__icon {
+    width: 1.75rem;
+    height: 1.75rem;
+    margin-right: 0.5rem;
+
+    &--like {
+      fill: $color-pink;
+      transform: translateY(1px);
+    }
+
+    &--collection {
+      fill: $color-yellow;
+      transform: translateY(2px) translateX(2px);
+    }
+
+    &--author {
+      height: 2.7rem;
+      width: 2.7rem;
+      margin-right: 0.75rem;
+    }
+  }
+
+  //BACK-SIDE
+  &__name--back {
+    font-size: 1.5rem;
+    letter-spacing: 0.2rem;
+    border-top: double $color-grey-light-3;
+    padding: 0.4rem 0;
+  }
+
+  h5 {
+    font-size: 1.3rem;
+    font-weight: 500;
+  }
+
+  &__ingredient {
+    border-bottom: 1px dotted $color-grey-light-3;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0.5rem;
+
+    ul {
+      display: flex;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__ingredient-item {
+    list-style: none;
+    flex: 0 0 50%;
+    font-size: 1.2rem;
+
+    &::before {
+      content: '';
+      display: inline-block;
+      height: 1rem;
+      width: 1rem;
+      margin-right: 0.7rem;
+
+      // // older browser
+      background-image: url(../img/chevron-thin-right.svg);
+      background-size: cover;
+
+      //Newer browsers - masks
+      @supports (-webkit-mask-image: url()) or (-webkit-mask-size: cover) {
+        background-color: $color-primary;
+        -webkit-mask-image: url(../img/chevron-thin-right.svg);
+        -webkit-mask-size: cover;
+        mask-image: url(../img/chevron-thin-right.svg);
+        mask-size: cover;
+        background-image: none;
+      }
+    }
+  }
+
+  &__step-item {
+    transform: translateX(1.7rem);
+    padding-left: 0.2rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and(max-width: $bp-medium), only screen and(hover: none) {
+  .receipt {
+    &__item {
+      width: 45rem;
+
+      height: 60rem;
+      display: flex;
+      flex-direction: column;
+      background-color: #fff;
+      box-shadow: $shadow-dark;
+      padding: 2.5rem 4rem;
+      border-radius: 5px;
+      line-height: 1;
+
+      &--front,
+      &--back {
+        position: relative;
+        box-shadow: none;
+        padding: 0;
+        margin: 0;
+        background-color: transparent;
+        border-radius: 0;
+      }
+
+      &--front {
+        width: 100%;
+        height: 45%;
+        padding: 0;
+      }
+
+      &--back {
+        transform: rotateY(0);
+        width: 100%;
+        height: 55%;
+      }
+
+      &:hover &--front {
+        transform: rotateY(0);
+      }
+
+      &:hover &--back {
+        transform: rotateY(0);
+      }
+    }
+
+    //FRONT-SIDE
+    &__img {
+      width: 100%;
+      height: 82%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    &__name--front {
+      display: none;
+    }
+
+    &__details {
+      flex-wrap: wrap;
+      font-size: 1rem;
+      font-weight: 400;
+      padding: 0;
+      height: auto;
+
+      & > * {
+        padding: 2.2rem 0.5rem;
+        margin: 0;
+        background-color: transparent;
+        letter-spacing: 0.05rem;
+      }
+    }
+
+    &__author {
+      margin-right: auto;
+    }
+
+    //BACK-SIDE
+    &__name--back {
+      font-size: 1.8rem;
+    }
+
+    h5 {
+      font-size: 1.6rem;
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    &__ingredient {
+      padding-bottom: 0.5rem;
+      margin-bottom: 0.5rem;
+    }
+
+    &__step {
+      ol {
+        padding-left: 2rem;
+      }
+    }
+
+    &__step-item {
+      padding-left: 0.2rem;
+      font-size: 1.2rem;
+      width: 100%;
+      transform: translateX(0);
+    }
+  }
+}
+
+@media only screen and(max-width: $bp-small) {
+  .receipt {
+    &__item {
+      width: 35rem;
+    }
+  }
+}

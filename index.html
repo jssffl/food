@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,400,400i|Nunito:300,300i"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="shortcut icon" type="image/png" href="img/logo.png" />
+
+    <title>Food &mdash; Simple cook</title>
+  </head>
+  <body class="container">
+    <header class="header">
+      <a class="logo-box" href="#">
+        <img src="img/logo.png" alt="logo" class="logo" />
+        <span>FOOD</span>
+      </a>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item">
+            <a href="#section-receipt" class="nav__link">食譜</a>
+          </li>
+          <li class="nav__item">
+            <a href="#section-ingredient" class="nav__link">食材</a>
+          </li>
+          <li class="nav__item">
+            <a href="#section-topics" class="nav__link">討論區</a>
+          </li>
+        </ul>
+      </nav>
+
+      <div class="user">
+        <div class="user__icon-box">
+          <svg class="user__icon">
+            <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+          </svg>
+          <span class="user__notification">2</span>
+        </div>
+        <div class="user__icon-box">
+          <svg class="user__icon">
+            <use xlink:href="img/sprite.svg#icon-chat"></use>
+          </svg>
+          <span class="user__notification">5</span>
+        </div>
+        <div class="user__detail">
+          <img src="img/user.png" alt="User photo" class="user__photo" />
+          <span class="user__name">Jane</span>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="section-hero">
+        <div class="hero__box">
+          <h1 class="heading-1 mb-md">找食譜 動手做</h1>
+          <form class="search__form">
+            <input type="text" class="search__input" />
+            <button class="search__button">
+              <svg class="search__icon">
+                <use xlink:href="img/sprite.svg#icon-magnifying-glass"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section-receipt" id="section-receipt">
+        <h2 class="heading-2 mb-lg text-center">熱門食譜</h2>
+
+        <div class="receipt">
+          <div class="receipt__item">
+            <div class="receipt__item--front">
+              <img src="img/salmon.jpg" alt="" class="receipt__img" />
+
+              <h3 class="receipt__name--front">奶油洋蔥鮭魚</h3>
+              <div class="receipt__details">
+                <div class="receipt__author">
+                  <img
+                    src="img/author.png"
+                    alt=""
+                    class="receipt__icon receipt__icon--author"
+                  />
+                  <span>青蛙先生</span>
+                </div>
+                <div class="receipt__like">
+                  <svg class="receipt__icon receipt__icon--like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                  </svg>
+                  <span> 150 </span>
+                </div>
+                <div class="receipt__collection">
+                  <svg class="receipt__icon receipt__icon--collection">
+                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                  </svg>
+                  <span> 110 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="receipt__item--back">
+              <h4 class="receipt__name--back">奶油洋蔥鮭魚</h4>
+              <h5>食材</h5>
+              <div class="receipt__ingredient">
+                <ul>
+                  <li class="receipt__ingredient-item">洋蔥半顆</li>
+                  <li class="receipt__ingredient-item">鮭魚一片</li>
+                  <li class="receipt__ingredient-item">奶油 25g</li>
+                  <li class="receipt__ingredient-item">鹽巴</li>
+                  <li class="receipt__ingredient-item">米酒</li>
+                </ul>
+              </div>
+
+              <h5>步驟</h5>
+              <div class="receipt__step">
+                <ol>
+                  <li class="receipt__step-item">
+                    鮭魚加適量鹽巴米酒，醃10分鐘去腥
+                  </li>
+                  <li class="receipt__step-item">洋蔥切絲後擺在鮭魚上</li>
+                  <li class="receipt__step-item">放上無鹽奶油</li>
+                  <li class="receipt__step-item">電鍋外加半杯水</li>
+                  <li class="receipt__step-item">
+                    將食材放入電鍋，等待電鍋跳起即可
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="receipt__item">
+            <div class="receipt__item--front">
+              <img src="img/chicken.jpg"" alt="" class="receipt__img" />
+              <h3 class="receipt__name--front">南瓜燒雞</h3>
+              <div class="receipt__details">
+                <div class="receipt__author">
+                  <img
+                    src="img/author.png"
+                    alt=""
+                    class="receipt__icon receipt__icon--author"
+                  />
+                  <span>花媽媽廚師</span>
+                </div>
+                <div class="receipt__like">
+                  <svg class="receipt__icon receipt__icon--like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                  </svg>
+                  <span> 150 </span>
+                </div>
+                <div class="receipt__collection">
+                  <svg class="receipt__icon receipt__icon--collection">
+                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                  </svg>
+                  <span> 110 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="receipt__item--back">
+              <h4 class="receipt__name--back">南瓜燒雞</h4>
+              <h5>食材</h5>
+              <div class="receipt__ingredient">
+                <ul>
+                  <li class="receipt__ingredient-item">南瓜1/4顆</li>
+                  <li class="receipt__ingredient-item">雞腿肉兩份</li>
+                  <li class="receipt__ingredient-item">醬油</li>
+                  <li class="receipt__ingredient-item">大蒜</li>
+                  <li class="receipt__ingredient-item">蔥花</li>
+                  <li class="receipt__ingredient-item">米酒</li>
+                </ul>
+              </div>
+              <h5>步驟</h5>
+              <div class="receipt__step">
+                <ol>
+                  <li class="receipt__step-item">雞腿肉用米酒及醬油醃30分</li>
+                  <li class="receipt__step-item">鍋中放入油及大蒜炒香</li>
+                  <li class="receipt__step-item">放入雞腿肉炒至表面轉白</li>
+                  <li class="receipt__step-item">再加入南瓜拌炒一下</li>
+                  <li class="receipt__step-item">加入醬油及水悶煮</li>
+                  <li class="receipt__step-item">
+                    煮至汁快收乾時，撒上蔥花即可
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+
+          <div class="receipt__item">
+            <div class="receipt__item--front">
+              <img src="img/toast.jpg" alt="" class="receipt__img" />
+              <h3 class="receipt__name--front">吐司布丁</h3>
+              <div class="receipt__details">
+                <div class="receipt__author">
+                  <img
+                    src="img/author.png"
+                    alt=""
+                    class="receipt__icon receipt__icon--author"
+                  />
+                  <span>小瓜他媽</span>
+                </div>
+                <div class="receipt__like">
+                  <svg class="receipt__icon receipt__icon--like">
+                    <use xlink:href="img/sprite.svg#icon-heart-full"></use>
+                  </svg>
+                  <span> 150 </span>
+                </div>
+                <div class="receipt__collection">
+                  <svg class="receipt__icon receipt__icon--collection">
+                    <use xlink:href="img/sprite.svg#icon-bookmark"></use>
+                  </svg>
+                  <span> 110 </span>
+                </div>
+              </div>
+            </div>
+
+            <div class="receipt__item--back">
+              <h4 class="receipt__name--back">吐司布丁</h4>
+              <h5>食材</h5>
+              <div class="receipt__ingredient">
+                <ul>
+                  <li class="receipt__ingredient-item">吐司兩片</li>
+                  <li class="receipt__ingredient-item">雞蛋兩顆</li>
+                  <li class="receipt__ingredient-item">牛奶 100ml</li>
+                  <li class="receipt__ingredient-item">果乾</li>
+                  <li class="receipt__ingredient-item">蜂蜜</li>
+                  <li class="receipt__ingredient-item">旁粉</li>
+                </ul>
+              </div>
+              <h5>步驟</h5>
+              <div class="receipt__step">
+                <ol>
+                  <li class="receipt__step-item">雞蛋、牛奶打散放入烤皿</li>
+                  <li class="receipt__step-item">將吐司切塊放入烤皿泡20分鐘</li>
+                  <li class="receipt__step-item">
+                    撒上果乾、放進烤箱15分鐘(180度)
+                  </li>
+                  <li class="receipt__step-item">出爐，撒上糖粉、蜂蜜</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-topics" id="section-topics">
+        <div class="video">
+          <video class="video__content" autoplay muted loop>
+            <source src="img/video.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+        <h2 class="heading-2 text-center">精選話題</h2>
+
+        <div class="topics">
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-2.png" class="topic__img" />
+              <figcaption class="topic__caption">早餐<br />吃什麼</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">早餐吃什麼</h3>
+              <p>一日之計在於晨</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-3.png" class="topic__img" />
+              <figcaption class="topic__caption">晚餐<br />吃什麼</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">晚餐吃什麼</h3>
+              <p>燒個好菜</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-4.png" class="topic__img" />
+              <figcaption class="topic__caption">健身<br />吃什麼</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">健身吃什麼</h3>
+              <p>增肌減脂</p>
+            </div>
+          </div>
+
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-5.png" class="topic__img" />
+              <figcaption class="topic__caption">麻辣<br />料理</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">麻辣料理</h3>
+              <p>辣一下</p>
+            </div>
+          </div>
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-6.png" class="topic__img" />
+              <figcaption class="topic__caption">懶人<br />料理</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">懶人料理</h3>
+              <p>10分鐘出餐</p>
+            </div>
+          </div>
+          <div class="topic">
+            <figure class="topic__shape">
+              <img alt="user image" src="img/user-7.png" class="topic__img" />
+              <figcaption class="topic__caption">來點<br />新花樣</figcaption>
+            </figure>
+            <div class="topic__text">
+              <h3 class="heading-3 pd-sm">來點新花樣</h3>
+              <p>試試新口味 換個好心情</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-ingredient" id="section-ingredient">
+        <div class="ingredient__food-preservation">
+          <h2 class="heading-2 mb-sm text-center">食物保存術</h2>
+          <div class="food-preservation__wrapper">
+            <figure class="article">
+              <h3 class="article__title">冰箱萬能 ? - 這些食物不適合放冰箱</h3>
+
+              <input
+                id="article-toggle-1"
+                class="article__show-more"
+                type="checkbox"
+              />
+              <label for="article-toggle-1">
+                <svg class="article__show-more-icon">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </label>
+
+              <blockquote class="article__description">
+                低溫可降低細菌繁殖，但有些食物怕冷易凍傷，像是青椒、黃瓜、香蕉，較適合常溫保存。<br />另外，冰箱濕度較高，容易加速某些食物發霉，像是洋蔥、大蒜、馬鈴薯，更適合放在乾燥通風處保存。
+              </blockquote>
+
+              <figcaption class="article__author">
+                <img src="img/author-2.png" class="article__author-icon" />
+                <div class="article__author-box">
+                  <p class="article__author-name">安安日常</p>
+                  <p class="article__date">2022/10/10</p>
+                </div>
+              </figcaption>
+            </figure>
+            <figure class="article">
+              <h3 class="article__title">菜荒不慌 ! - 蔬菜如何保存</h3>
+              <input
+                id="article-toggle-2"
+                class="article__show-more"
+                type="checkbox"
+              />
+              <label for="article-toggle-2">
+                <svg class="article__show-more-icon">
+                  <use xlink:href="img/sprite.svg#icon-plus"></use>
+                </svg>
+              </label>
+              <blockquote class="article__description">
+                葉菜類：先使用餐巾紙將菜卷起來，再用塑膠袋把葉菜套起來放入冰箱蔬果箱冷藏<br />
+                深綠色類：將青菜切段後，在沸水中加入一點鹽與油快速汆燙，撈起後瀝乾，放冷後，放冷藏或冷凍備用<br />
+                根莖類：適合放置於家中陰涼處。
+              </blockquote>
+              <figcaption class="article__author">
+                <img src="img/author-2.png" class="article__author-icon" />
+                <div class="article__author-box">
+                  <p class="article__author-name">綠色廚房</p>
+                  <p class="article__date">2022/10/15</p>
+                </div>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__logo-box">
+        <img src="img/logo.png" alt="logo" class="footer__logo" />
+      </div>
+      <div class="footer__nav">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a href="#" class="footer__link">關於我們</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">聯絡我們</a>
+          </li>
+
+          <li class="footer__item">
+            <a href="#" class="footer__link">使用條款</a>
+          </li>
+          <li class="footer__item">
+            <a href="#" class="footer__link">隱私權政策</a>
+          </li>
+        </ul>
+      </div>
+      <p class="footer__copyright">&copy; 2022 Food, Inc</p>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+.footer {
+  font-size: 1.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media only screen and (max-width: $bp-small) {
+    flex-direction: column;
+    justify-content: center;
+
+    & > * {
+      margin-bottom: 0.5rem;
+    }
+  }
+
+  &__logo {
+    width: 7rem;
+    height: 7rem;
+  }
+
+  &__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__item {
+    margin: 0 1rem;
+
+    @media only screen and (max-width: $bp-large) {
+      margin: 0;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      text-decoration: none;
+      color: #fff;
+      padding: 1rem 2rem;
+      display: inline-block;
+      letter-spacing: 0.25rem;
+
+      @media only screen and (max-width: $bp-large) {
+        padding: 0.5rem;
+        letter-spacing: 0.15rem;
+      }
+    }
+
+    &:hover {
+      background-color: rgba(#fff, 0.2);
+      transform: translateY(-2px);
+    }
+  }
+
+  &__copyright {
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+
+    @media only screen and (max-width: $bp-large) {
+      font-size: 0.8rem;
+      letter-spacing: 0.05rem;
+    }
+  }
+}
