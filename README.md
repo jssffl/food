@@ -1,4 +1,4 @@
-# Food app
+# Food App
 A simple receipt sharing website with SCSS
 
 ## Design
