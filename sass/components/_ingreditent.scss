@@ -43,6 +43,7 @@
     padding-bottom: 2rem;
     display: none;
     transition: all 0.2s ease;
+    color: #777;
   }
 
   &__show-more {
@@ -80,6 +81,11 @@
   &__author {
     display: flex;
     align-items: center;
+  }
+
+  &__date {
+    font-size: 1rem;
+    color: $color-secondary;
   }
 
   &__author-icon {

@@ -29,7 +29,7 @@ body {
   background-color: rgba(204, 204, 204, 0.25);
   color: #f4f2f2;
   letter-spacing: 0.45rem;
-  font-weight: 400;
+  font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 5px; }
 
@@ -41,7 +41,8 @@ body {
   color: transparent; }
 
 .heading-3 {
-  font-size: 2.2rem; }
+  font-size: 2.1rem;
+  font-weight: 600; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -93,7 +94,8 @@ body {
     letter-spacing: 0.12rem;
     padding-bottom: 2rem;
     display: none;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    color: #777; }
   .article__show-more {
     display: none; }
   .article__show-more-icon {
@@ -119,6 +121,9 @@ body {
   .article__author {
     display: flex;
     align-items: center; }
+  .article__date {
+    font-size: 1rem;
+    color: #777; }
   .article__author-icon {
     width: 4rem;
     height: 4rem; }
@@ -155,7 +160,8 @@ body {
     .receipt__item--back {
       transform: rotateY(180deg);
       padding: 1.5rem 2rem;
-      line-height: 1.5; }
+      line-height: 1.5;
+      font-size: 1.2rem; }
     .receipt__item:hover .receipt__item--front {
       transform: rotateY(-180deg); }
     .receipt__item:hover .receipt__item--back {
@@ -167,7 +173,7 @@ body {
   .receipt__name--front {
     font-size: 1.8rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.5rem;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     padding: 0.6rem 1.5rem;
@@ -219,8 +225,8 @@ body {
     font-weight: 500; }
   .receipt__ingredient {
     border-bottom: 1px dotted #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem; }
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem; }
     .receipt__ingredient ul {
       display: flex;
       -ms-flex-wrap: wrap;
@@ -228,7 +234,7 @@ body {
   .receipt__ingredient-item {
     list-style: none;
     flex: 0 0 50%;
-    font-size: 1.2rem; }
+    color: #777; }
     .receipt__ingredient-item::before {
       content: '';
       display: inline-block;
@@ -248,7 +254,7 @@ body {
   .receipt__step-item {
     transform: translateX(1.7rem);
     padding-left: 0.2rem;
-    font-size: 1.2rem; }
+    color: #777; }
 
 @media only screen and (max-width: 50em), only screen and (hover: none) {
   .receipt__item {
@@ -275,7 +281,8 @@ body {
     .receipt__item--back {
       transform: rotateY(0);
       width: 100%;
-      height: 55%; }
+      height: 55%;
+      font-size: 1.4rem; }
     .receipt__item:hover .receipt__item--front {
       transform: rotateY(0); }
     .receipt__item:hover .receipt__item--back {
@@ -286,10 +293,10 @@ body {
     object-fit: cover;
     object-position: center; }
   .receipt__name--front {
-    display: none; }
+    display: none;
+    font-weight: 700; }
   .receipt__details {
     flex-wrap: wrap;
-    font-size: 1rem;
     padding: 0;
     height: auto; }
     .receipt__details > * {
@@ -312,7 +319,6 @@ body {
     padding-left: 2rem; }
   .receipt__step-item {
     padding-left: 0.2rem;
-    font-size: 1.2rem;
     width: 100%;
     transform: translateX(0); } }
 
@@ -411,9 +417,10 @@ body {
     filter: blur(3px) brightness(80%); }
   .topic__text {
     transform: skewX(12deg);
-    letter-spacing: 0.6rem; }
+    letter-spacing: 0.5rem; }
     .topic__text p {
-      letter-spacing: 0.25rem; }
+      letter-spacing: 0.25rem;
+      color: #777; }
 
 .logo-box {
   padding: 0 2rem;
@@ -495,7 +502,7 @@ body {
   fill: currentColor; }
 
 .user__notification {
-  background-color: #999;
+  background-color: #b8b8b8;
   color: #fff;
   width: 1.75rem;
   height: 1.75rem;
@@ -639,16 +646,16 @@ main {
 
 .section-hero {
   grid-column: 1/-1;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-hero {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero-small.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero-small.webp); } }
 
 .section-receipt {
   grid-column: center-start/ center-end; }

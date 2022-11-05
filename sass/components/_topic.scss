@@ -115,10 +115,11 @@
 
   &__text {
     transform: skewX(12deg);
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.5rem;
 
     p {
       letter-spacing: 0.25rem;
+      color: $color-secondary;
     }
   }
 }
