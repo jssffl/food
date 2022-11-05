@@ -1,6 +1,5 @@
 # Food app
 A simple receipt sharing website with SCSS
-一個使用SCSS打造的食譜分享網站首頁
 
 ## Design
 - base on layout of CSS Grid and flexbox
