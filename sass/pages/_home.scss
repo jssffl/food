@@ -27,7 +27,6 @@ main {
 
 .section-hero {
   grid-column: 1/-1;
-
   background-image: linear-gradient(
       to right bottom,
       rgba(#000, 0.1),
@@ -42,6 +41,15 @@ main {
   align-items: center;
   justify-content: center;
   overflow: hidden;
+
+  @media only screen and (max-width: $bp-large) {
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(#000, 0.1),
+        rgba(#000, 0.1)
+      ),
+      url(../img/hero-small.jpg);
+  }
 }
 
 .section-receipt {
