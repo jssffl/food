@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-
     <link
       href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400&display=swap"
       rel="stylesheet"
@@ -74,7 +73,12 @@
         <div class="receipt">
           <div class="receipt__item">
             <div class="receipt__item--front">
-              <img src="img/food-1.jpg" alt="food 1" class="receipt__img" />
+              <img
+                srcset="img/food-1-small.jpg 300w, img/food-1.jpg 1000w"
+                alt="food 1"
+                class="receipt__img"
+                src="img/food-1.jpg"
+              />
 
               <h3 class="receipt__name--front">奶油洋蔥鮭魚</h3>
               <div class="receipt__details">
@@ -133,7 +137,8 @@
 
           <div class="receipt__item">
             <div class="receipt__item--front">
-              <img src="img/food-2.jpg"" alt="food 2" class="receipt__img" />
+              <img srcset="img/food-2-small.jpg 300w, img/food-2.jpg
+              1000w"src="img/food-2.jpg"" alt="food 2" class="receipt__img" />
               <h3 class="receipt__name--front">南瓜燒雞</h3>
               <div class="receipt__details">
                 <div class="receipt__author">
@@ -190,7 +195,12 @@
 
           <div class="receipt__item">
             <div class="receipt__item--front">
-              <img src="img/food-3.jpg" alt="food 3" class="receipt__img" />
+              <img
+                srcset="img/food-3-small.jpg 300w, img/food-3.jpg 1000w"
+                src="img/food-3.jpg"
+                alt="food 3"
+                class="receipt__img"
+              />
               <h3 class="receipt__name--front">吐司布丁</h3>
               <div class="receipt__details">
                 <div class="receipt__author">
@@ -317,7 +327,7 @@
             </figure>
             <div class="topic__text">
               <h3 class="heading-3 pd-sm">來點新花樣</h3>
-              <p>試試新口味 換個好心情</p>
+              <p>換個好心情</p>
             </div>
           </div>
         </div>
