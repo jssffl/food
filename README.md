@@ -3,7 +3,6 @@ A simple receipt sharing website with CSS preprocessor - SCSS
 
 ## Design
 - based on layout of CSS Grid and flexbox
-- divide home page into 6 parts (header, hero section, receipt section, topic section, ingredient discussion section, and footer)
 
 ### Interactive effect 
 - turn bgColor of the nav-link darker when hovering on the nav-link
