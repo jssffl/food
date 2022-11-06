@@ -21,7 +21,7 @@
   }
 
   &__input {
-    width: 95%;
+    width: 90%;
     border: none;
     height: 3em;
     border-radius: 20px;
@@ -36,13 +36,14 @@
     &:focus {
       outline: none;
       width: 100%;
+      background-color: rgba($color-grey-light-2, 0.9);
     }
   }
 
   &__button {
     border: none;
     background-color: transparent;
-
+    cursor: pointer;
     &:active {
       transform: translateY(2px);
     }

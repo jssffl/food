@@ -1,5 +1,5 @@
-// RECEIPT
-.receipt {
+// RECIPE
+.recipe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -134,7 +134,7 @@
     padding: 0.4rem 0;
   }
 
-  h5 {
+  &__base {
     font-size: 1.3rem;
     font-weight: 500;
   }
@@ -187,7 +187,7 @@
 }
 
 @media only screen and(max-width: $bp-medium), only screen and(hover: none) {
-  .receipt {
+  .recipe {
     &__item {
       width: 45rem;
 
@@ -267,7 +267,7 @@
       font-size: 1.8rem;
     }
 
-    h5 {
+    &__base {
       font-size: 1.6rem;
       font-weight: 500;
       line-height: 1.6;
@@ -293,7 +293,7 @@
 }
 
 @media only screen and(max-width: $bp-small) {
-  .receipt {
+  .recipe {
     &__item {
       width: 35rem;
     }

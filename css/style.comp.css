@@ -18,7 +18,7 @@ html {
 body {
   font-family: "Noto Sans TC", sans-serif;
   font-size: 1.6rem;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 1.6;
   letter-spacing: 0.16rem;
   color: #575756;
@@ -26,24 +26,23 @@ body {
 
 .heading-1 {
   font-size: 3rem;
-  background-color: rgba(250, 249, 249, 0.25);
-  color: #faf9f9;
-  letter-spacing: 0.35rem;
-  font-weight: 400;
+  background-color: rgba(204, 204, 204, 0.25);
+  color: #f4f2f2;
+  letter-spacing: 0.45rem;
+  font-weight: 700;
   padding: 0.5rem 2rem;
   border-radius: 5px; }
 
 .heading-2 {
-  font-size: 3rem;
+  font-size: 3.2rem;
   letter-spacing: 0.8rem;
-  font-weight: 700;
   background-image: linear-gradient(to right bottom, #f9ba8f, #d1ab82);
   -webkit-background-clip: text;
   color: transparent; }
 
 .heading-3 {
-  font-size: 2.2rem;
-  font-weight: 500; }
+  font-size: 2.1rem;
+  font-weight: 600; }
 
 .mb-sm {
   margin-bottom: 2rem; }
@@ -81,7 +80,7 @@ body {
       width: 35rem;
       padding: 2rem 2.5rem; } }
   .article__title {
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 500;
     letter-spacing: 0.15rem;
     margin-bottom: 1.2rem; }
@@ -91,21 +90,22 @@ body {
   .article__description {
     margin-bottom: auto;
     line-height: 1.8;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     letter-spacing: 0.12rem;
     padding-bottom: 2rem;
     display: none;
-    transition: all 0.2s ease; }
+    transition: all 0.2s ease;
+    color: #777; }
   .article__show-more {
     display: none; }
   .article__show-more-icon {
     width: 2.5rem;
     height: 2.5rem;
     position: absolute;
-    top: 2.4rem;
+    top: 2.35rem;
     right: 2rem;
     cursor: pointer;
-    fill: #575756;
+    fill: #817f7f;
     transition: all 0.2s; }
     .article__show-more-icon:hover {
       transform: scale(1.1); }
@@ -113,22 +113,28 @@ body {
       transform: translateY(2px); }
     @media only screen and (max-width: 37.5em) {
       .article__show-more-icon {
-        top: 2rem; } }
+        top: 2.25rem;
+        width: 2rem;
+        height: 2rem; } }
   .article__show-more:checked ~ .article__description {
     display: block; }
   .article__author {
-    display: flex; }
+    display: flex;
+    align-items: center; }
+  .article__date {
+    font-size: 1rem;
+    color: #777; }
   .article__author-icon {
     width: 4rem;
     height: 4rem; }
   .article__author-box {
     margin-left: 2rem; }
 
-.receipt {
+.recipe {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
-  .receipt__item {
+  .recipe__item {
     width: 32rem;
     height: 28rem;
     margin: 0 4.5rem 4rem;
@@ -136,9 +142,9 @@ body {
     -moz-perspective: 150rem;
     position: relative; }
     @media only screen and (max-width: 62.5em) {
-      .receipt__item {
+      .recipe__item {
         margin: 0 2.5rem 4rem; } }
-    .receipt__item--front, .receipt__item--back {
+    .recipe__item--front, .recipe__item--back {
       position: absolute;
       top: 0;
       left: 0;
@@ -151,22 +157,23 @@ body {
       border-radius: 5px;
       overflow: hidden;
       transition: all 0.8s ease; }
-    .receipt__item--back {
+    .recipe__item--back {
       transform: rotateY(180deg);
       padding: 1.5rem 2rem;
-      line-height: 1.5; }
-    .receipt__item:hover .receipt__item--front {
+      line-height: 1.5;
+      font-size: 1.2rem; }
+    .recipe__item:hover .recipe__item--front {
       transform: rotateY(-180deg); }
-    .receipt__item:hover .receipt__item--back {
+    .recipe__item:hover .recipe__item--back {
       transform: rotateY(0); }
-  .receipt__img {
+  .recipe__img {
     width: 100%;
     display: block;
     overflow: hidden; }
-  .receipt__name--front {
+  .recipe__name--front {
     font-size: 1.8rem;
     color: #fff;
-    font-weight: 400;
+    font-weight: 600;
     letter-spacing: 0.5rem;
     background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.4));
     padding: 0.6rem 1.5rem;
@@ -174,13 +181,13 @@ body {
     position: absolute;
     bottom: 24%;
     left: 0; }
-  .receipt__details {
+  .recipe__details {
     display: flex;
     align-items: center;
     height: 25%;
     font-size: 1.3rem;
     padding: 0 0.8rem; }
-    .receipt__details > * {
+    .recipe__details > * {
       background-color: #f4f2f2;
       border-radius: 100px;
       display: flex;
@@ -188,47 +195,47 @@ body {
       justify-content: center;
       height: 3.5rem;
       padding: 0 1rem; }
-  .receipt__like {
+  .recipe__like {
     margin-right: 0.5rem; }
-  .receipt__author {
+  .recipe__author {
     margin-right: auto; }
-    .receipt__author span {
+    .recipe__author span {
       letter-spacing: 0.15rem; }
-  .receipt__icon {
+  .recipe__icon {
     width: 1.75rem;
     height: 1.75rem;
     margin-right: 0.5rem; }
-    .receipt__icon--like {
+    .recipe__icon--like {
       fill: #ff3366;
       transform: translateY(1px); }
-    .receipt__icon--collection {
+    .recipe__icon--collection {
       fill: #e7aa4f;
       transform: translateY(2px) translateX(2px); }
-    .receipt__icon--author {
+    .recipe__icon--author {
       height: 2.7rem;
       width: 2.7rem;
       margin-right: 0.75rem; }
-  .receipt__name--back {
+  .recipe__name--back {
     font-size: 1.5rem;
     letter-spacing: 0.2rem;
     border-top: double #ccc;
     padding: 0.4rem 0; }
-  .receipt h5 {
+  .recipe__base {
     font-size: 1.3rem;
     font-weight: 500; }
-  .receipt__ingredient {
+  .recipe__ingredient {
     border-bottom: 1px dotted #ccc;
-    padding-bottom: 0.5rem;
-    margin-bottom: 0.5rem; }
-    .receipt__ingredient ul {
+    padding-bottom: 0.75rem;
+    margin-bottom: 0.75rem; }
+    .recipe__ingredient ul {
       display: flex;
       -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
-  .receipt__ingredient-item {
+  .recipe__ingredient-item {
     list-style: none;
     flex: 0 0 50%;
-    font-size: 1.2rem; }
-    .receipt__ingredient-item::before {
+    color: #777; }
+    .recipe__ingredient-item::before {
       content: '';
       display: inline-block;
       height: 1rem;
@@ -237,20 +244,20 @@ body {
       background-image: url(../img/chevron-thin-right.svg);
       background-size: cover; }
       @supports (-webkit-mask-image: url()) or (-webkit-mask-size: cover) {
-        .receipt__ingredient-item::before {
+        .recipe__ingredient-item::before {
           background-color: #575756;
           -webkit-mask-image: url(../img/chevron-thin-right.svg);
           -webkit-mask-size: cover;
           mask-image: url(../img/chevron-thin-right.svg);
           mask-size: cover;
           background-image: none; } }
-  .receipt__step-item {
+  .recipe__step-item {
     transform: translateX(1.7rem);
     padding-left: 0.2rem;
-    font-size: 1.2rem; }
+    color: #777; }
 
 @media only screen and (max-width: 50em), only screen and (hover: none) {
-  .receipt__item {
+  .recipe__item {
     width: 45rem;
     height: 60rem;
     display: flex;
@@ -260,63 +267,63 @@ body {
     padding: 2.5rem 4rem;
     border-radius: 5px;
     line-height: 1; }
-    .receipt__item--front, .receipt__item--back {
+    .recipe__item--front, .recipe__item--back {
       position: relative;
       box-shadow: none;
       padding: 0;
       margin: 0;
       background-color: transparent;
       border-radius: 0; }
-    .receipt__item--front {
+    .recipe__item--front {
       width: 100%;
       height: 45%;
       padding: 0; }
-    .receipt__item--back {
+    .recipe__item--back {
       transform: rotateY(0);
       width: 100%;
-      height: 55%; }
-    .receipt__item:hover .receipt__item--front {
+      height: 55%;
+      font-size: 1.4rem; }
+    .recipe__item:hover .recipe__item--front {
       transform: rotateY(0); }
-    .receipt__item:hover .receipt__item--back {
+    .recipe__item:hover .recipe__item--back {
       transform: rotateY(0); }
-  .receipt__img {
+  .recipe__img {
     width: 100%;
     height: 82%;
     object-fit: cover;
     object-position: center; }
-  .receipt__name--front {
-    display: none; }
-  .receipt__details {
+  .recipe__name--front {
+    display: none;
+    font-weight: 700; }
+  .recipe__details {
     flex-wrap: wrap;
-    font-size: 1rem;
     padding: 0;
     height: auto; }
-    .receipt__details > * {
+    .recipe__details > * {
       padding: 2.2rem 0.5rem;
       margin: 0;
       background-color: transparent;
       letter-spacing: 0.05rem; }
-  .receipt__author {
+  .recipe__author {
     margin-right: auto; }
-  .receipt__name--back {
+  .recipe__name--back {
     font-size: 1.8rem; }
-  .receipt h5 {
+  .recipe__base {
     font-size: 1.6rem;
     font-weight: 500;
     line-height: 1.6; }
-  .receipt__ingredient {
+  .recipe__ingredient {
     padding-bottom: 0.5rem;
     margin-bottom: 0.5rem; }
-  .receipt__step ol {
+  .recipe__step ol {
     padding-left: 2rem; }
-  .receipt__step-item {
+  .recipe__step-item {
     padding-left: 0.2rem;
-    font-size: 1.2rem;
     width: 100%;
     transform: translateX(0); } }
 
 @media only screen and (max-width: 37.5em) {
-  .receipt__item {
+  .recipe__item {
     width: 35rem; } }
 
 .video {
@@ -410,9 +417,10 @@ body {
     filter: blur(3px) brightness(80%); }
   .topic__text {
     transform: skewX(12deg);
-    letter-spacing: 0.6rem; }
+    letter-spacing: 0.5rem; }
     .topic__text p {
-      letter-spacing: 0.2rem; }
+      letter-spacing: 0.25rem;
+      color: #777; }
 
 .logo-box {
   padding: 0 2rem;
@@ -443,7 +451,6 @@ body {
 
 .nav {
   font-size: 1.8rem;
-  font-weight: 500;
   margin-right: auto;
   height: 100%;
   padding: 0 2rem;
@@ -469,7 +476,7 @@ body {
         padding: 1.5rem; } }
     @media only screen and (max-width: 37.5em) {
       .nav__link:link, .nav__link:visited {
-        padding: 0.75rem; } }
+        padding: 0.5rem; } }
   .nav__link:hover {
     background-color: #f4f2f2; }
 
@@ -495,7 +502,7 @@ body {
   fill: currentColor; }
 
 .user__notification {
-  background-color: #999;
+  background-color: #b8b8b8;
   color: #fff;
   width: 1.75rem;
   height: 1.75rem;
@@ -548,7 +555,7 @@ body {
       margin-top: 2rem; } }
 
 .search__input {
-  width: 95%;
+  width: 90%;
   border: none;
   height: 3em;
   border-radius: 20px;
@@ -561,11 +568,13 @@ body {
   transition: all 0.2s; }
   .search__input:focus {
     outline: none;
-    width: 100%; }
+    width: 100%;
+    background-color: rgba(244, 242, 242, 0.9); }
 
 .search__button {
   border: none;
-  background-color: transparent; }
+  background-color: transparent;
+  cursor: pointer; }
   .search__button:active {
     transform: translateY(2px); }
 
@@ -639,18 +648,18 @@ main {
 
 .section-hero {
   grid-column: 1/-1;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.jpg);
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden; }
-  @media only screen and (max-width: 62.5em) {
+  @media only screen and (max-width: 37.5em) {
     .section-hero {
-      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero-small.jpg); } }
+      background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero-small.webp); } }
 
-.section-receipt {
+.section-recipe {
   grid-column: center-start/ center-end; }
 
 .section-topics {

@@ -10,7 +10,8 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="shortcut icon" type="image/png" href="img/logo.png" />
-    <title>Food &mdash; Simple cook</title>
+    <title>Food &mdash; Simple cook </title>
+   
   </head>
   <body class="container">
     <header class="header">
@@ -21,7 +22,7 @@
       <nav class="nav">
         <ul class="nav__list">
           <li class="nav__item">
-            <a href="#section-receipt" class="nav__link">食譜</a>
+            <a href="#section-recipe" class="nav__link">食譜</a>
           </li>
           <li class="nav__item">
             <a href="#section-ingredient" class="nav__link">食材</a>
@@ -56,7 +57,7 @@
       <section class="section-hero">
         <div class="hero__box">
           <h1 class="heading-1 mb-md">找食譜 動手做</h1>
-          <form class="search__form">
+          <form action='#' class="search__form">
             <input type="text" class="search__input" />
             <button class="search__button">
               <svg class="search__icon">
@@ -67,36 +68,36 @@
         </div>
       </section>
 
-      <section class="section-receipt" id="section-receipt">
+      <section class="section-recipe" id="section-recipe">
         <h2 class="heading-2 mb-lg text-center">熱門食譜</h2>
 
-        <div class="receipt">
-          <div class="receipt__item">
-            <div class="receipt__item--front">
+        <div class="recipe">
+          <div class="recipe__item">
+            <div class="recipe__item--front">
               <img
                 srcset="img/food-1-small.webp 600w, img/food-1.webp 1000w"
                 alt="food 1"
-                class="receipt__img"
+                class="recipe__img"
                 src="img/food-1.webp"
               />
-              <h3 class="receipt__name--front">奶油洋蔥鮭魚</h3>
-              <div class="receipt__details">
-                <div class="receipt__author">
+              <h3 class="recipe__name--front">奶油洋蔥鮭魚</h3>
+              <div class="recipe__details">
+                <div class="recipe__author">
                   <img
                     src="img/author.png"
                     alt="author icon"
-                    class="receipt__icon receipt__icon--author"
+                    class="recipe__icon recipe__icon--author"
                   />
                   <span>青蛙先生</span>
                 </div>
-                <div class="receipt__like">
-                  <svg class="receipt__icon receipt__icon--like">
+                <div class="recipe__like">
+                  <svg class="recipe__icon recipe__icon--like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                   </svg>
                   <span> 150 </span>
                 </div>
-                <div class="receipt__collection">
-                  <svg class="receipt__icon receipt__icon--collection">
+                <div class="recipe__collection">
+                  <svg class="recipe__icon recipe__icon--collection">
                     <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                   </svg>
                   <span> 110 </span>
@@ -104,29 +105,29 @@
               </div>
             </div>
 
-            <div class="receipt__item--back">
-              <h4 class="receipt__name--back">奶油洋蔥鮭魚</h4>
-              <h5>食材</h5>
-              <div class="receipt__ingredient">
+            <div class="recipe__item--back">
+              <h4 class="recipe__name--back">奶油洋蔥鮭魚</h4>
+              <div class="recipe__base">食材</div>
+              <div class="recipe__ingredient">
                 <ul>
-                  <li class="receipt__ingredient-item">洋蔥半顆</li>
-                  <li class="receipt__ingredient-item">鮭魚一片</li>
-                  <li class="receipt__ingredient-item">奶油 25g</li>
-                  <li class="receipt__ingredient-item">鹽巴</li>
-                  <li class="receipt__ingredient-item">米酒</li>
+                  <li class="recipe__ingredient-item">洋蔥半顆</li>
+                  <li class="recipe__ingredient-item">鮭魚一片</li>
+                  <li class="recipe__ingredient-item">奶油 25g</li>
+                  <li class="recipe__ingredient-item">鹽巴</li>
+                  <li class="recipe__ingredient-item">米酒</li>
                 </ul>
               </div>
 
-              <h5>步驟</h5>
-              <div class="receipt__step">
+              <p class="recipe__base">步驟</h5>
+              <div class="recipe__step">
                 <ol>
-                  <li class="receipt__step-item">
+                  <li class="recipe__step-item">
                     鮭魚加適量鹽巴米酒，醃10分鐘去腥
                   </li>
-                  <li class="receipt__step-item">洋蔥切絲後擺在鮭魚上</li>
-                  <li class="receipt__step-item">放上無鹽奶油</li>
-                  <li class="receipt__step-item">電鍋外加半杯水</li>
-                  <li class="receipt__step-item">
+                  <li class="recipe__step-item">洋蔥切絲後擺在鮭魚上</li>
+                  <li class="recipe__step-item">放上無鹽奶油</li>
+                  <li class="recipe__step-item">電鍋外加半杯水</li>
+                  <li class="recipe__step-item">
                     將食材放入電鍋，等待電鍋跳起即可
                   </li>
                 </ol>
@@ -134,32 +135,32 @@
             </div>
           </div>
 
-          <div class="receipt__item">
-            <div class="receipt__item--front">
+          <div class="recipe__item">
+            <div class="recipe__item--front">
               <img
                 srcset="img/food-2-small.webp 600w, img/food-2.webp 1000w"
                 alt="food 2"
-                class="receipt__img"
+                class="recipe__img"
                 src="img/food-2.webp"
               />
-              <h3 class="receipt__name--front">南瓜燒雞</h3>
-              <div class="receipt__details">
-                <div class="receipt__author">
+              <h3 class="recipe__name--front">南瓜燒雞</h3>
+              <div class="recipe__details">
+                <div class="recipe__author">
                   <img
                     src="img/author.png"
                     alt="author icon"
-                    class="receipt__icon receipt__icon--author"
+                    class="recipe__icon recipe__icon--author"
                   />
                   <span>花媽媽廚師</span>
                 </div>
-                <div class="receipt__like">
-                  <svg class="receipt__icon receipt__icon--like">
+                <div class="recipe__like">
+                  <svg class="recipe__icon recipe__icon--like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                   </svg>
                   <span> 150 </span>
                 </div>
-                <div class="receipt__collection">
-                  <svg class="receipt__icon receipt__icon--collection">
+                <div class="recipe__collection">
+                  <svg class="recipe__icon recipe__icon--collection">
                     <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                   </svg>
                   <span> 110 </span>
@@ -167,28 +168,28 @@
               </div>
             </div>
 
-            <div class="receipt__item--back">
-              <h4 class="receipt__name--back">南瓜燒雞</h4>
-              <h5>食材</h5>
-              <div class="receipt__ingredient">
+            <div class="recipe__item--back">
+              <h4 class="recipe__name--back">南瓜燒雞</h4>
+              <div class="recipe__base">食材</div>
+              <div class="recipe__ingredient">
                 <ul>
-                  <li class="receipt__ingredient-item">南瓜1/4顆</li>
-                  <li class="receipt__ingredient-item">雞腿肉兩份</li>
-                  <li class="receipt__ingredient-item">醬油</li>
-                  <li class="receipt__ingredient-item">大蒜</li>
-                  <li class="receipt__ingredient-item">蔥花</li>
-                  <li class="receipt__ingredient-item">米酒</li>
+                  <li class="recipe__ingredient-item">南瓜1/4顆</li>
+                  <li class="recipe__ingredient-item">雞腿肉兩份</li>
+                  <li class="recipe__ingredient-item">醬油</li>
+                  <li class="recipe__ingredient-item">大蒜</li>
+                  <li class="recipe__ingredient-item">蔥花</li>
+                  <li class="recipe__ingredient-item">米酒</li>
                 </ul>
               </div>
-              <h5>步驟</h5>
-              <div class="receipt__step">
+              <div class="recipe__base">步驟</div>
+              <div class="recipe__step">
                 <ol>
-                  <li class="receipt__step-item">雞腿肉用米酒及醬油醃30分</li>
-                  <li class="receipt__step-item">鍋中放入油及大蒜炒香</li>
-                  <li class="receipt__step-item">放入雞腿肉炒至表面轉白</li>
-                  <li class="receipt__step-item">再加入南瓜拌炒一下</li>
-                  <li class="receipt__step-item">加入醬油及水悶煮</li>
-                  <li class="receipt__step-item">
+                  <li class="recipe__step-item">雞腿肉用米酒及醬油醃30分</li>
+                  <li class="recipe__step-item">鍋中放入油及大蒜炒香</li>
+                  <li class="recipe__step-item">放入雞腿肉炒至表面轉白</li>
+                  <li class="recipe__step-item">再加入南瓜拌炒一下</li>
+                  <li class="recipe__step-item">加入醬油及水悶煮</li>
+                  <li class="recipe__step-item">
                     煮至汁快收乾時，撒上蔥花即可
                   </li>
                 </ol>
@@ -196,32 +197,32 @@
             </div>
           </div>
 
-          <div class="receipt__item">
-            <div class="receipt__item--front">
+          <div class="recipe__item">
+            <div class="recipe__item--front">
               <img
                 srcset="img/food-3-small.webp 600w, img/food-3.webp 1000w"
                 alt="food 3"
-                class="receipt__img"
+                class="recipe__img"
                 src="img/food-3.webp"
               />
-              <h3 class="receipt__name--front">吐司布丁</h3>
-              <div class="receipt__details">
-                <div class="receipt__author">
+              <h3 class="recipe__name--front">吐司布丁</h3>
+              <div class="recipe__details">
+                <div class="recipe__author">
                   <img
                     src="img/author.png"
                     alt="author icon"
-                    class="receipt__icon receipt__icon--author"
+                    class="recipe__icon recipe__icon--author"
                   />
                   <span>小瓜他媽</span>
                 </div>
-                <div class="receipt__like">
-                  <svg class="receipt__icon receipt__icon--like">
+                <div class="recipe__like">
+                  <svg class="recipe__icon recipe__icon--like">
                     <use xlink:href="img/sprite.svg#icon-heart-full"></use>
                   </svg>
                   <span> 150 </span>
                 </div>
-                <div class="receipt__collection">
-                  <svg class="receipt__icon receipt__icon--collection">
+                <div class="recipe__collection">
+                  <svg class="recipe__icon recipe__icon--collection">
                     <use xlink:href="img/sprite.svg#icon-bookmark"></use>
                   </svg>
                   <span> 110 </span>
@@ -229,28 +230,28 @@
               </div>
             </div>
 
-            <div class="receipt__item--back">
-              <h4 class="receipt__name--back">吐司布丁</h4>
-              <h5>食材</h5>
-              <div class="receipt__ingredient">
+            <div class="recipe__item--back">
+              <h4 class="recipe__name--back">吐司布丁</h4>
+              <div class="recipe__base">食材</div>
+              <div class="recipe__ingredient">
                 <ul>
-                  <li class="receipt__ingredient-item">吐司兩片</li>
-                  <li class="receipt__ingredient-item">雞蛋兩顆</li>
-                  <li class="receipt__ingredient-item">牛奶 100ml</li>
-                  <li class="receipt__ingredient-item">果乾</li>
-                  <li class="receipt__ingredient-item">蜂蜜</li>
-                  <li class="receipt__ingredient-item">旁粉</li>
+                  <li class="recipe__ingredient-item">吐司兩片</li>
+                  <li class="recipe__ingredient-item">雞蛋兩顆</li>
+                  <li class="recipe__ingredient-item">牛奶 100ml</li>
+                  <li class="recipe__ingredient-item">果乾</li>
+                  <li class="recipe__ingredient-item">蜂蜜</li>
+                  <li class="recipe__ingredient-item">旁粉</li>
                 </ul>
               </div>
-              <h5>步驟</h5>
-              <div class="receipt__step">
+              <div class="recipe__base">步驟</div>
+              <div class="recipe__step">
                 <ol>
-                  <li class="receipt__step-item">雞蛋、牛奶打散放入烤皿</li>
-                  <li class="receipt__step-item">將吐司切塊放入烤皿泡20分鐘</li>
-                  <li class="receipt__step-item">
+                  <li class="recipe__step-item">雞蛋、牛奶打散放入烤皿</li>
+                  <li class="recipe__step-item">將吐司切塊放入烤皿泡20分鐘</li>
+                  <li class="recipe__step-item">
                     撒上果乾、放進烤箱15分鐘(180度)
                   </li>
-                  <li class="receipt__step-item">出爐，撒上糖粉、蜂蜜</li>
+                  <li class="recipe__step-item">出爐，撒上糖粉、蜂蜜</li>
                 </ol>
               </div>
             </div>
