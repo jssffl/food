@@ -1,8 +1,8 @@
 # Food App
-A simple receipt sharing website with SCSS
+A simple receipt sharing website with CSS preprocessor - SCSS
 
 ## Design
-- base on layout of CSS Grid and flexbox
+- based on layout of CSS Grid and flexbox
 - divide home page into 6 parts (header, hero section, receipt section, topic section, ingredient discussion section, and footer)
 
 ### Interactive effect 
@@ -10,7 +10,7 @@ A simple receipt sharing website with SCSS
 - widen the input-box when focus on the input-box  
 - flip the receipt card to see receipt details(ingredient and step) when hovering on the receipt card
 - text show up from bottom to top with blur and smaller background when hovering on the topic card
-- show ingredient discussion paragraph when click the plus icon
+- show ingredient discussion paragraph ahter click the plus icon
 
 ### RWD
 destop
