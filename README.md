@@ -13,12 +13,12 @@ A simple recipe sharing website with CSS preprocessor - SCSS
 
 ### RWD
 desktop
-- set 1rem font-size to 10px for desktop device
+- set 1 rem font-size to 10px for desktop device
 - set cards horizontally
 - the effect of flipping recipe card
 
 phone & tab
-- set 1rem font-size to 8px/9px for phone/tab device
+- set 1 rem font-size to 8px/9px for phone/tab device
 - set cards vertically
 - resolution switching: serve smaller image size 
 
