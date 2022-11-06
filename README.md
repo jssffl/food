@@ -23,7 +23,7 @@ phone & tab
 - set cards vertically
 - resolution switching: serve smaller image size 
 
-
+![image](https://github.com/jssffl/food/blob/main/FoodApp-1.gif)
 
 
 
