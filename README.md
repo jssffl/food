@@ -9,7 +9,7 @@ A simple receipt sharing website with CSS preprocessor - SCSS
 - widen the input-box when focus on the input-box  
 - flip the receipt card to see receipt details(ingredient and step) when hovering on the receipt card
 - text show up from bottom to top with blur and smaller background when hovering on the topic card
-- show ingredient discussion paragraph ahter click the plus icon
+- show ingredient discussion paragraph after click the plus icon
 
 ### RWD
 destop
