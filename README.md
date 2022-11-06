@@ -1,5 +1,5 @@
 # [Food App](https://venerable-narwhal-5c5c00.netlify.app)
-A simple receipt sharing website with CSS preprocessor - SCSS
+A simple recipe sharing website with CSS preprocessor - SCSS
 
 ## Design
 - based on layout of CSS Grid and flexbox
@@ -7,15 +7,15 @@ A simple receipt sharing website with CSS preprocessor - SCSS
 ### Interactive effect 
 - turn bgColor of the nav-link darker when hovering on the nav-link
 - widen the input-box when focus on the input-box  
-- flip the receipt card to see receipt details(ingredient and step) when hovering on the receipt card
+- flip the recipe card to see recipe details(ingredient and step) when hovering on the recipe card
 - text show up from bottom to top with blur and smaller background when hovering on the topic card
 - show ingredient discussion paragraph after click the plus icon
 
 ### RWD
-destop
-- set 1rem font-size to 10px for destop device
+desktop
+- set 1rem font-size to 10px for desktop device
 - set cards horizontally
-- the effect of fliping receipt card
+- the effect of flipping recipe card
 
 phone & tab
 - set 1rem font-size to 8px/9px for phone/tab device
