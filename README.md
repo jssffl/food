@@ -1,4 +1,4 @@
-# Food App
+# [Food App](https://venerable-narwhal-5c5c00.netlify.app)
 A simple receipt sharing website with CSS preprocessor - SCSS
 
 ## Design
