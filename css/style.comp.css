@@ -639,15 +639,11 @@ body {
     display: flex;
     align-items: center; }
 
-main {
-  display: grid;
-  grid-template-columns: [full-start] 1fr [center-start] repeat(8, [col-start] minmax(min-content, 16rem) [col-end]) [center-end] 1fr [full-end];
-  grid-template-rows: calc(100vh - 7rem); }
-  main > * {
-    padding: 5rem 0; }
+main > * {
+  padding: 5rem 0; }
 
 .section-hero {
-  grid-column: 1/-1;
+  height: calc(100vh - 7rem);
   background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero.webp);
   background-size: cover;
   background-position: center;
@@ -659,19 +655,13 @@ main {
     .section-hero {
       background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url(../img/hero-small.webp); } }
 
-.section-recipe {
-  grid-column: center-start/ center-end; }
-
 .section-topics {
-  grid-column: 1/-1;
   position: relative; }
 
 .section-ingredient {
-  grid-column: center-start/ center-end;
-  padding-bottom: 10rem; }
+  padding: 5rem 0 10rem; }
 
 .footer {
-  grid-column: 1/-1;
   background-color: #444;
   height: 12rem;
   padding: 2rem 6rem; }
