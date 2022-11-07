@@ -2,9 +2,9 @@
 A simple recipe sharing website with CSS preprocessor - SCSS
 
 ## Design
-- based on layout of CSS Grid and flexbox
+- based on layout of flexbox
 
-### Interation effect 
+### Interaction effect 
 - turn bgColor of the nav-link darker when hovering on the nav-link
 - widen the input-box when focus on the input-box  
 - flip the recipe card to see recipe details(ingredient and step) when hovering on the recipe card
