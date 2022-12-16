@@ -1,8 +1,12 @@
 # [Food App](https://venerable-narwhal-5c5c00.netlify.app)
 A simple recipe sharing website with CSS preprocessor - SCSS
 
-## Design
-- based on layout of flexbox
+## Description
+- SCSS syntax
+- Layout is based on flexbox
+- compile and compress: [node-sass](https://www.npmjs.com/package/node-sass)
+- prefix: [postcss](https://www.npmjs.com/package/postcss) & [autoprefixer](https://www.npmjs.com/package/autoprefixer)
+
 
 ### Interaction effect 
 - turn bgColor of the nav-link darker when hovering on the nav-link
